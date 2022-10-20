@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Demo</title>
+		<link rel="stylesheet" href="../lib/prism/prism.css" />
+		<link rel="stylesheet" href="../universal.css" />
+		<link rel="shortcut icon" href="../favicon.png" />
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><h1>Array Demo</h1></a>
+			<nav>
+				<ul>
+					<li>
+						<a href="../index.html">
+							<i class="fas fa-info-circle"></i>
+							<span>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fas fa-sort-amount-down-alt"></i>
+							<span>1D Arrays</span>
+						</a>
+					</li>
+					<li>
+						<a href="../twodim/index.html">
+							<i class="fas fa-th"></i>
+							<span>2D Arrays</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="page-body">
+			<div class="content">
+				<h2>1D Arrays</h2>
+				<h3>Overview</h3>
+				<section>
+					<p>The demo below allows you to simulate a 1-dimensional array. You can select whichever language you are working with from the dropdown box.</p>
+				</section>
+				<section class="utility">
+					<div class="widget">
+						<span>Which Language Are You Working With?</span>
+						<select id="language-selector">
+							<option value="c">C</option>
+							<option value="cs">C#</option>
+							<option value="cpp">C++</option>
+							<option value="java" selected="true">Java</option>
+							<option value="js">JavaScript</option>
+							<option value="objc">Objective-C</option>
+							<option value="php">PHP</option>
+							<option value="python">Python</option>
+							<option value="swift">Swift</option>
+						</select>
+					</div>
+				</section>
+				<h3>A Few Things to Remember</h3>
+				<ol class="big-list">
+					<li>The location of an item in an array is called an index, or indices plural.</li>
+					<li>The first item in an array is at index 0. The last item is at the index that is one less than the length of the array (e.g. an array of 8 items would have indices from 0 to 7).</li>
+					<li>The items in an array can be of any type; they are not limited to the four basic options provided in this tool (integer, double, string, and boolean). However, every item in the array must be of that same single type.</li>
+					<li>The language you selected in the dropdown above will not impact the behavior of the array; it simply helps guide how you put your array into code.</li>
+				</ol>
+				<h3>Creating an Array</h3>
+				<section>
+					<p>In order to use an array, you first must create and initialize it. In the section directly below, specify a few important properties of the array.</p>
+				</section>
+				<section class="explanation-margin-section">
+					<table class="explanation-margin-section-table">
+						<tr>
+							<td><h4>Creating & Initializing</h4></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="widget">
+									<span>Item Type:</span>
+									<select id="item-type-selector">
+										<option value="int" selected="true">Integer</option>
+										<option value="double">Double</option>
+										<option value="str">String</option>
+										<option value="bool">Boolean</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<p>Arrays may contain many different values. However, every item in the array must be of the same type. For example, you can't have an array containing both numbers and words.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="widget">
+									<span>Name:</span>
+									<input type="text" class="code" id="name-input" size="16" value="myArray" spellcheck="false" />
+								</div>
+							</td>
+							<td>
+								<p>Give the array a name. This will not impact how the array actually works, it will just help you keep track of it in your code.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="widget">
+									<span>Initialization Method:</span>
+									<select id="init-method-selector">
+										<option value="by-size" selected="true">By Size</option>
+										<option value="literal">Literal</option>
+									</select>
+									<div class="widget" id="init-by-size-widget">
+										<span>Size:</span>
+										<input type="text" class="code" id="size-input" size="3" value="8" spellcheck="false" />
+									</div>
+									<div class="widget" id="init-literal-widget">
+										<span>Values:</span>
+										<input type="text" class="code" id="literal-values-input" size="26" value="1,2,3" spellcheck="false" />
+										<span class="raw-note">Please separate values with only a comma and no spaces</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<p>Finally, initialize the array. This determines what the values in the array will look like when it is first created. You can either specify a certain number of "empty" default values or choose to specify each value literally.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>What the Code Looks Like:</h5>
+								<pre class="language-java">
+									<code class="language-java" id="creation-code">
+										IF YOU CAN SEE THIS THERE IS A JAVASCRIPT ERROR (Try reloading the page I guess) :(
+									</code>
+								</pre>
+							</td>
+							<td>
+								<p>This is what the code looks like to create and initialize the array in your selected language using the properties you specified.</p>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<span class="note">At this time there is no built-in syntax error detection for some features of this tool. If you make syntactic mistakes this tool may not alert you of the mistake. Please keep this in mind and type carefully.</span>
+				<h3>Current Array</h3>
+				<section>
+					<p>The table below gives a live look at the current array you just created using the properties you specified above. Feel free to go back and change those properties at any time, however note that those changes may reinitialize the values currently stored in the array (clearing them).</p>
+					<p>Each index (location in the array) has a value below it. Use the sections below the table to read the value of specific items and modify the value of items. When you read or set an item, the index and the value will be highlighted in red to show where the action took place.</p>
+				</section>
+				<section class="explanation-margin-section">
+					<table class="explanation-margin-section-table">
+						<tr>
+							<td>
+								<div class="widget">
+									<button class="big" id="reset-to-init-button">Reset to Initialization</button>
+								</div>
+							</td>
+							<td>
+								<p>Click this button to reset the array contents back to the initialized values.</p>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<div class="sticky-array-display-block-space-holder" id="sticky-array-display-block-space-holder">
+					<div class="sticky-array-display-block" id="sticky-array-display-block">
+						<section class="array-display-section">
+							<table class="array-display-table" id="array-display-table">
+								<tr>
+									<th>IF YOU CAN SEE THIS THERE IS A JAVASCRIPT ERROR (Try reloading the page I guess) :(</th>
+								</tr>
+								<tr></tr>
+							</table>
+						</section>
+					</div>
+				</div>
+				<span class="note">Scroll to see more values if they exceeed the width of the display.</span>
+				<section class="explanation-margin-section">
+					<table class="explanation-margin-section-table">
+						<tr>
+							<td><h4>Getting A Specific Value</h4></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="widget">
+									<span>Index:</span>
+									<input type="text" class="code" id="read-item-index-input" size="3" value="0" spellcheck="false" />
+									<button class="big" id="read-value-button">Read Value</button>
+									<div class="widget">
+										<span>Output: </span>
+										<span class="display" id="read-item-value-display"></span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<p>The value of the item at the index you specified will be read and outputted. For example, if the item at index 3 contains the number 21, reading from index 3 will output "21".</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>What the Code Looks Like:</h5>
+								<pre class="language-java">
+									<code class="language-java" id="read-code">
+										IF YOU CAN SEE THIS THERE IS A JAVASCRIPT ERROR (Try reloading the page I guess) :(
+									</code>
+								</pre>
+							</td>
+							<td>
+								<p>This is what the code looks like to read a value from the array in your selected language. Note that we are also adding a print statement to display the value.</p>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section class="explanation-margin-section">
+					<table class="explanation-margin-section-table">
+						<tr>
+							<td><h4>Setting A Specific Value</h4></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="widget">
+									<span>Index:</span>
+									<input type="text" class="code" id="set-item-index-input" size="3" value="0" spellcheck="false" />
+									<hr />
+									<span>Value:</span>
+									<input type="text" class="code" id="set-item-value-input" size="10" value="10" spellcheck="false" />
+									<button class="big" id="set-value-button">Set Value</button>
+								</div>
+							</td>
+							<td>
+								<p>The value at the index you specified will be changed to the new value you provided.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>What the Code Looks Like:</h5>
+								<pre class="language-java">
+									<code class="language-java" id="set-code">
+										IF YOU CAN SEE THIS THERE IS A JAVASCRIPT ERROR (Try reloading the page I guess) :(
+									</code>
+								</pre>
+							</td>
+							<td>
+								<p>This is what the code looks like to set a value in the array in your selected language.</p>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<span>Demo developed by Will Brandon - MHS Class of 2021</span>
+			<br />
+			<span>Personal website: <a href="http://wbrandon.com">http://wbrandon.com</span>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/d593fb7afd.js" crossorigin="anonymous"></script>
+		<script src="../lib/prism/prism.js"></script>
+		<script src="../lang.js"></script>
+		<script src="onedim.js"></script>
+	</body>
+</html>

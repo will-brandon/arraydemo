@@ -1,0 +1,50 @@
++----------------------------------------------------------------+
+|                                                                |
+|                        ARRAY DEMO NOTES                        |
+|                                                                |
++----------------------------------------------------------------+
+| Will Brandon - 3/23/2021                                       |
++----------------------------------------------------------------+
+
+
+
+LIBRARIES & IMPORTS
+
+ Static (offline):
+ - prism.js -- Multilingual syntax highlighting
+	(lib/prism/prism.js)
+
+ Dynamic:
+ - jQuery.js -- Animations & resource loading
+	https://ajax.googleapis.com/ajax/libs/jquery/3.5.1
+	jquery.min.js
+ - Google Font [Montserrat & Roboto]
+	https://fonts.googleapis.com/css2?family=Montserrat:wght@100;
+	400&family=Roboto:wght@100&display=swap
+ - Font Awesome -- Vector graphics icon library
+	https://kit.fontawesome.com/d593fb7afd.js
+
+
+
+LANGUAGES TO SUPPORT
+ - C
+ - C#
+ - C++
+ - Java (default option because this is used most in class)
+ - JavaScript
+ - Objective-C
+ - PHP
+ - Python
+ - Swift
+
+PRIMITIVE/COMMON ITEM TYPES TO SUPPORT
+ - Integers
+ - Doubles
+ - Strings
+ - Booleans
+
+ARRAY FEATURES TO INCLUDE
+ - Initializing by size
+ - Initializing by array literal
+ - Reading at an index
+ - Writing at an index

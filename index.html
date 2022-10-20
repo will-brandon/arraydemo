@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Demo - About</title>
+		<link rel="stylesheet" href="lib/prism/prism.css" />
+		<link rel="stylesheet" href="universal.css" />
+		<link rel="shortcut icon" href="favicon.png" />
+	</head>
+	<body>
+		<header>
+			<a href=""><h1>Array Demo</h1></a>
+			<nav>
+				<ul>
+					<li>
+						<a href="">
+							<i class="fas fa-info-circle"></i>
+							<span>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="onedim/index.html">
+							<i class="fas fa-sort-amount-down-alt"></i>
+							<span>1D Arrays</span>
+						</a>
+					</li>
+					<li>
+						<a href="twodim/index.html">
+							<i class="fas fa-th"></i>
+							<span>2D Arrays</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="page-body">
+			<div class="content">
+				<h2>About</h2>
+				<h3>Demos</h3>
+				<section class="demo-link-block-section">
+					<a class="demo-link-block" href="onedim/index.html">
+						<span>1D Arrays</span>
+						<i class="fas fa-sort-amount-down-alt"></i>
+					</a>
+					<a class="demo-link-block" href="twodim/index.html">
+						<span>2D Arrays</span>
+						<i class="fas fa-th"></i>
+					</a>
+				</section>
+				<h3>Goal of This Tool</h3>
+				<section>
+					<p>This demo tool was developed to help Computer Science students understand and visualize how arrays work. Ideally after experimenting with this demo students will better understand these concepts.</p>
+					<p>Each demo provides the ability to specify a programming language to guide the coding experience, however the language does not impact the behavior of the demo, it just provides insight at the bottom of each section. In addition, users will not be required to write any code; they will use basic UI controls to manipulate the arrays. This provides ease and efficiency when changing properties of the arrays on the go without the baggage of remembering syntax.</p>
+				</section>
+				<h3>Developer Notes</h3>
+				<section>
+					<p>This application was developed by Will Brandon, Melrose High School class of 2021, as a senior internship project. The project uses only client-side functionality so that it can be stored and run in local files without any backend scripts. However, it will not function properly offline because the app relies on numerous dynamic HTTP imports. (See table below for a list of libraries and imports)</p>
+					<p>I do plan on hosting it on my web server, likely under the domain <a href="http://projects.wbrandon.com/arraydemo">projects.wbrandon.com/arraydemo</a>. This domain may not always be active if I choose not to renew the domain or shut down my web server.</p>
+				</section>
+				<h3>Specifications</h3>
+				<section>
+					<p>As mentioned above, there are no backends scripts such as PHP used. This is strictly a browser app developed with HTML5, CSS3, and JavaScript.</p>
+					<h4>Libraries & Imports</h4>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Medium</th>
+							<th>Import Method</th>
+							<th>Usage</th>
+						</tr>
+						<tr>
+							<td>jQuery</td>
+							<td>JavaScript</td>
+							<td>Dynamic HTTP</td>
+							<td>Animations & resource loading</td>
+						</tr>
+						<tr>
+							<td>Prism</td>
+							<td>JavaScript</td>
+							<td>Static in lib folder</td>
+							<td>Multilingual syntax highlighting for code snippets</td>
+						</tr>
+						<tr>
+							<td>Font Awesome</td>
+							<td>JavaScript</td>
+							<td>Dynamic HTTP</td>
+							<td>Vector graphics icon library</td>
+						</tr>
+						<tr>
+							<td>Google Font</td>
+							<td>JavaScript</td>
+							<td>Dynamic HTTP</td>
+							<td>Using 'Montserrat' and 'Roboto' fonts</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<span>Demo developed by Will Brandon - MHS Class of 2021</span>
+			<br />
+			<span>Personal website: <a href="http://wbrandon.com">http://wbrandon.com</span>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/d593fb7afd.js" crossorigin="anonymous"></script>
+		<script src="lib/prism/prism.js"></script>
+	</body>
+</html>
